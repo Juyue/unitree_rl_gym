@@ -1,0 +1,49 @@
+name: unitree-rl 
+channels:
+  - pyg
+  - nvidia
+  - pytorch
+  - conda-forge
+  - pytorch3d
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - pytorch::pytorch=2.3.1
+  - pytorch::torchvision=0.18.1
+  - pytorch::torchaudio=2.3.1
+  - pytorch::pytorch-cuda=12.1
+  - pytorch::pytorch-mutex=*=cuda
+
+  - pip
+  - git
+
+  - gcc_linux-64=11
+  - gxx_linux-64=11
+  - setuptools>=68.2.2
+  - clang-format=18
+  - cmake
+  - make
+  - ninja
+  - ipython
+  - tqdm
+  - pyg
+  - sparsehash
+
+  - pytorch-lightning=1.9.4 
+  - omegaconf
+  - flatten-dict
+  - wandb
+  - transformers
+  - ffmpeg
+  - linkify-it-py
+  - imageio
+  - py-opencv
+  - pillow
+  - pip:
+    - point_cloud_utils==0.29.5 # ! required version
+    - loguru
+    - randomname
+    - einops
+    - polyscope
+    - trimesh
+    - gdown
